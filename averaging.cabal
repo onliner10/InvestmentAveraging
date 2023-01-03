@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Adapter
+      Core
   other-modules:
       Paths_averaging
   hs-source-dirs:
@@ -49,6 +50,7 @@ executable averaging-exe
     , cassava
     , either
     , text
+    , time
     , vector
   default-language: Haskell2010
 

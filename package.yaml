@@ -53,6 +53,7 @@ executables:
     - cassava
     - bytestring
     - either
+    - time
 
 tests:
   averaging-test:
