@@ -34,9 +34,22 @@ ghc-options:
 - -Wredundant-constraints
 - -XOverloadedStrings
 - -XDeriveGeneric
+- -XGeneralizedNewtypeDeriving
+- -XDataKinds
 
 library:
   source-dirs: src
+  dependencies:
+    - text
+    - vector
+    - cassava
+    - bytestring
+    - either
+    - time
+    - safe-money
+    - Decimal
+    - sorted-list
+    - text
 
 executables:
   averaging-exe:
@@ -48,12 +61,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - averaging
-    - text
-    - vector
-    - cassava
-    - bytestring
-    - either
-    - time
 
 tests:
   averaging-test:
@@ -65,3 +72,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - averaging
+    - quick-check
