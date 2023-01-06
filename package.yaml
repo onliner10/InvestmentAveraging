@@ -72,4 +72,9 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - averaging
-    - quick-check
+    - QuickCheck
+    - safe-money
+    - time
+    - sorted-list
+    - containers
+    - vector-space

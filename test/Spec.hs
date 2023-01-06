@@ -1,2 +1,5 @@
+import qualified DcaSpec
+
 main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+main = do
+    DcaSpec.main

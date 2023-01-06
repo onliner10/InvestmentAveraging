@@ -63,12 +63,18 @@ test-suite averaging-test
   main-is: Spec.hs
   other-modules:
       DcaSpec
+      TimeArbitraries
       Paths_averaging
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -XOverloadedStrings -XDeriveGeneric -XGeneralizedNewtypeDeriving -XDataKinds -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      averaging
+      QuickCheck
+    , averaging
     , base >=4.7 && <5
-    , quick-check
+    , containers
+    , safe-money
+    , sorted-list
+    , time
+    , vector-space
   default-language: Haskell2010
